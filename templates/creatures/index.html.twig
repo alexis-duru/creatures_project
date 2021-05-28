@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CREATURES{% endblock %}
+
+{% block body %}
+    <div class="section">
+        <div class="section-container">
+        {% for creature in creatures %}
+                <div class="creature">
+                    <h3>{{creature.name}}</h3>
+                    {# <p>{{creature.description}}</p> #}
+                    <img src="{{asset('assets/images/' ~ creature.images )}}">
+                    <a class="liens" href="{{ path("app_creatures_single", {id:creature.id}) }}">Details</a>
+                    <a class="liens" href="{{ path("app_creature_edit", {id:creature.id}) }}">Edit</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

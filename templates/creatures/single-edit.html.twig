@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}FORM{% endblock %}
+
+{% block body %}
+
+
+<section class="section">
+    {# <h1>SNOWFLAKES</h1> #}
+    <div class="section-container-form">
+            <div class="form">
+                {% if isModification %}
+                <h3>Modification de {{ creature.name }}</h3>
+                {% else %}
+                 <h3>Ajout de créature</h3>
+                {% endif %}
+                {# <h3>Edit Form</h3><h4>{{creature.name}}</h4> #}
+                    {{ form_start(form)}}
+                    {# {{form_row(form.nom, {"attr":{'class':'toto'},"label":"Nom de la créature:"})}} #}
+                    {{ form_widget(form)}}
+                    <input class="input-form" id="input-envoyer" type="submit" value="Envoyer">
+                    {{ form_end(form) }}
+            </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,166 @@
+.section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-image: url('../images/forest.jpg');
+    background-size: cover;
+}
+
+.section-single {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-image: url('../images/forest.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    transform: scale(1);
+    transition: 0.8s;
+    color: white;
+}
+
+h1:hover {
+    font-size: 50px;
+    transform: scale(1.1);
+}
+
+.liens {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    padding: 8px 10px;
+    width: 150px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    text-transform: uppercase;
+    transition: 0.8s;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.liens:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+
+.section-container {
+    height:auto;
+    width: auto;
+}
+
+.section-container-form {
+    height:100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, label, textarea {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+input, textarea {
+    background-color: white;
+    opacity: 0.7;
+}
+
+#input-envoyer {
+    margin-top: 50px;
+    text-transform: uppercase;
+    transition: 0.8s;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+
+.section-homepage {
+    height:100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-homepage>h1 {
+    border: 3px solid;
+    padding: 15px;
+    background-color: transparent;
+}
+
+.section-homepage>h1:hover {
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+
+.creature {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.section-container>.creature>img {
+    height: 300px;
+    width: 450px;
+
+}
+
+img {
+    border: 1px solid white;
+    transform: scale(0.8);
+    transition: 0.8s;
+}
+
+h3 {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 300px;
+    padding: 10px;
+    /* transform: scale(0.8);
+    transition: 0.8s; */
+}
+
+h3:hover {
+    /* transform: scale(1); */
+}
+   
+
+img:hover {
+    transform: scale(1);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

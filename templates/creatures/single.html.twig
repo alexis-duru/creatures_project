@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CREATURE SINGLE PAGE
+{% endblock %}
+
+{% block body %}
+	<section class="section-single">
+		<div class="section-container">
+			<div class="creature">
+				<h3>{{creature.name}}</h3>
+				<p>{{creature.description}}</p>
+				<img src="{{asset('assets/images/' ~ creature.images )}}">
+			</div>
+		</div>
+	</section>
+{% endblock %}
